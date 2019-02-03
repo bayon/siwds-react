@@ -1,0 +1,25 @@
+import { StickyContainer, Sticky } from 'react-sticky';
+
+<StickyContainer>
+    {/* Other elements can be in between `StickyContainer` and `Sticky`,
+    but certain styles can break the positioning logic used. */}
+    <Sticky>
+      {({
+        style,
+
+        // the following are also available but unused in this example
+        isSticky,
+        wasSticky,
+        distanceFromTop,
+        distanceFromBottom,
+        calculatedHeight
+      }) => (
+        <header style={style}>
+          sticky header
+        </header>
+      )}
+    </Sticky>
+    <Sticky>{({ style }) => <h1 style={style}>Sticky element</h1>}</Sticky>
+
+    {/* ... */}
+  </StickyContainer>

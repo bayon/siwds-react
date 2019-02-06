@@ -43,7 +43,7 @@ class Navbar_Sticky extends Component {
        
         <div className="bg-info">
           <Navbar color="dark" dark expand="md" sticky="top">
-            <NavbarBrand href="/">si-wds</NavbarBrand>
+            <NavbarBrand href="/">S.I. Systems</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
@@ -75,29 +75,8 @@ class Navbar_Sticky extends Component {
           </Navbar>
           <RE_Parallax></RE_Parallax>
         </div>
-        <p>This is below the element in which the navbar is &quot;stuck&quot; to</p>
-        <p>This is below the element in which the navbar is &quot;stuck&quot; to</p>
-        <p>This is below the element in which the navbar is &quot;stuck&quot; to</p>
-        <p>This is below the element in which the navbar is &quot;stuck&quot; to</p>
-        <p>This is below the element in which the navbar is &quot;stuck&quot; to</p>
-        <p>This is below the element in which the navbar is &quot;stuck&quot; to</p>
-        <p>This is below the element in which the navbar is &quot;stuck&quot; to</p>
-        <p>This is below the element in which the navbar is &quot;stuck&quot; to</p>
-        <p>This is below the element in which the navbar is &quot;stuck&quot; to</p>
-        <p>This is below the element in which the navbar is &quot;stuck&quot; to</p>
-        <p>This is below the element in which the navbar is &quot;stuck&quot; to</p>
-        <p>This is below the element in which the navbar is &quot;stuck&quot; to</p>
-        <p>This is below the element in which the navbar is &quot;stuck&quot; to</p>
-        <p>This is below the element in which the navbar is &quot;stuck&quot; to</p>
-        <p>This is below the element in which the navbar is &quot;stuck&quot; to</p>
-        <p>This is below the element in which the navbar is &quot;stuck&quot; to</p>
-        <p>This is below the element in which the navbar is &quot;stuck&quot; to</p>
-        <p>This is below the element in which the navbar is &quot;stuck&quot; to</p>
-        <p>This is below the element in which the navbar is &quot;stuck&quot; to</p>
-        <p>This is below the element in which the navbar is &quot;stuck&quot; to</p>
-        <p>This is below the element in which the navbar is &quot;stuck&quot; to</p>
-        <p>This is below the element in which the navbar is &quot;stuck&quot; to</p>
-        <p>This is below the element in which the navbar is &quot;stuck&quot; to</p>
+        
+        
       </div>
     );
   }

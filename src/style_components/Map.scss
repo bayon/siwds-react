@@ -1,0 +1,43 @@
+ 
+
+.Map{
+
+}
+.map-links-container{
+     padding:5px;
+     text-align:right;
+     margin-right:0px;
+     background-color:#333;
+     border:solid 1px #000;
+     margin:0px;
+     width:100%;
+    
+}
+ 
+.map-links-container a{
+    text-decoration:none;
+    color:#222;
+     line-height:5;
+     text-transform: capitalize;
+}
+.map-links-container a:hover{
+    color:#fff;
+}
+.map-menu-link{
+    text-decoration: none;
+    display: inline-block;
+    background-color:  #bbedb4;
+    box-shadow: 0 0 5px 0 black;
+    opacity: 1;
+    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+    font-size:.8rem;
+    text-transform: capitalize;
+    text-align: center;
+    height: auto;
+    width: 24%;
+    margin-right:auto;
+    margin-left:auto;
+}
+.map-menu-link:hover{
+    background-color:#222;
+}

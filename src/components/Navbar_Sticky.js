@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import HeaderComponent from './HeaderComponent.js';
-//import FooterComponent from './FooterComponent.js';
+ 
 import Home       from './pages/Home';
 import Dashboard  from './pages/Dashboard';
 import CreateAds  from './pages/CreateAds';
@@ -15,8 +14,6 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
@@ -41,7 +38,7 @@ class Navbar_Sticky extends Component {
   render() {
     return (
       <div>
-        <HeaderComponent></HeaderComponent>
+        
         <div>
         <Router>
           <div >
@@ -59,7 +56,10 @@ class Navbar_Sticky extends Component {
                     </DropdownToggle>
                       <DropdownMenu right>
                         <DropdownItem>
-                            <Link to="/home" className="navbar-menu-link">Home</Link>
+                            
+                              <Link to="/home" className="navbar-menu-link">Home</Link>
+                              
+                           
                         </DropdownItem>
                         <DropdownItem>
                             <Link to="/dashboard" className="navbar-menu-link">Dashboard</Link>
@@ -84,6 +84,7 @@ class Navbar_Sticky extends Component {
           </div>
           </Router>
         </div>
+       
       </div>
     );
   }

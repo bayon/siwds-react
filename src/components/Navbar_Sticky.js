@@ -4,9 +4,9 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
  
 import Home       from './pages/Home';
-import Dashboard  from './pages/Dashboard';
-import CreateAds  from './pages/CreateAds';
-import Campaigns  from './pages/Campaigns';
+import System  from './pages/System';
+import Information  from './pages/Information';
+import Gallery  from './pages/Gallery';
 
 import {
   Collapse,
@@ -55,6 +55,7 @@ class Navbar_Sticky extends Component {
                       Menu
                     </DropdownToggle>
                       <DropdownMenu right>
+                      {/**pages: Home , The System, Information, Gallery , Contact Us */}
                         <DropdownItem>
                             
                               <Link to="/home" className="navbar-menu-link">Home</Link>
@@ -62,13 +63,13 @@ class Navbar_Sticky extends Component {
                            
                         </DropdownItem>
                         <DropdownItem>
-                            <Link to="/dashboard" className="navbar-menu-link">Dashboard</Link>
+                            <Link to="/system" className="navbar-menu-link">The System</Link>
                         </DropdownItem>
                         <DropdownItem>
-                            <Link to="/createAds" className="navbar-menu-link">Create Ads</Link>
+                            <Link to="/information" className="navbar-menu-link">Information</Link>
                         </DropdownItem> 
                         <DropdownItem>
-                            <Link to="/campaigns" className="navbar-menu-link">Campaigns</Link>
+                            <Link to="/gallery" className="navbar-menu-link">Gallery</Link>
                         </DropdownItem>
                       </DropdownMenu>
                     </UncontrolledDropdown>
@@ -78,9 +79,9 @@ class Navbar_Sticky extends Component {
             </div>
           </Navbar>
           <Route exact path="/home" component={Home} />
-          <Route exact path="/dashboard" component={Dashboard} />
-          <Route exact path="/createAds" component={CreateAds} />
-          <Route exact path="/campaigns" component={Campaigns} />
+          <Route exact path="/system" component={System} />
+          <Route exact path="/information" component={Information} />
+          <Route exact path="/gallery" component={Gallery} />
           </div>
           </Router>
         </div>

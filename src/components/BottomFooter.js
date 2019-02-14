@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
+import { Container, Row, Col } from 'reactstrap';
 
 class BottomFooter extends Component {
   render() {
     return (
-      <div className=" BottomFooter">
-        
+      <Row>
+      <Col style={{textAlign:"center"}}>
+      <p>For more information, Please call (843) 697-7584</p>
+      <p className="fine-print">Wave Dissipation Systems of Sullivan's Island South Carolina</p>
 
-            <p>Bottom Footer:: Sullivans Island Wave Dissipation Systems</p>
-          
-       
-      
-      </div>
+      </Col>
+    </Row>
     );
   }
 }

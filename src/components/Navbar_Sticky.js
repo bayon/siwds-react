@@ -7,7 +7,7 @@ import Home       from './pages/Home';
 import System  from './pages/System';
 import Information  from './pages/Information';
 import Gallery  from './pages/Gallery';
-
+import { Container, Row, Col} from 'reactstrap';
 import {
   Collapse,
   Navbar,
@@ -37,9 +37,7 @@ class Navbar_Sticky extends Component {
   }
   render() {
     return (
-      <div>
-        
-        <div>
+       
         <Router>
           <div >
           <Navbar color="light" light expand="md" sticky="top" className="navigation-bar">
@@ -84,9 +82,7 @@ class Navbar_Sticky extends Component {
           <Route exact path="/gallery" component={Gallery} />
           </div>
           </Router>
-        </div>
-       
-      </div>
+        
     );
   }
 }

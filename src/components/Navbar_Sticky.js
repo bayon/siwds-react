@@ -7,7 +7,8 @@ import Home       from './pages/Home';
 import System  from './pages/System';
 import Information  from './pages/Information';
 import Gallery  from './pages/Gallery';
-
+import RE_Parallax from './pages/RE_Parallax';
+import { Container, Row, Col} from 'reactstrap';
 import {
   Collapse,
   Navbar,
@@ -37,9 +38,7 @@ class Navbar_Sticky extends Component {
   }
   render() {
     return (
-      <div>
-        
-        <div>
+       
         <Router>
           <div >
           <Navbar color="light" light expand="md" sticky="top" className="navigation-bar">
@@ -56,18 +55,20 @@ class Navbar_Sticky extends Component {
                     </DropdownToggle>
                       <DropdownMenu right>
                       {/**pages: Home , The System, Information, Gallery , Contact Us */}
-                        <DropdownItem>
-                            
-                              <Link to="/home" className="navbar-menu-link">Home</Link>
-                              
-                           
+        
+        
+                       
+                        <DropdownItem>  
+                              <Link to="/" className="navbar-menu-link">Home</Link>
                         </DropdownItem>
+                        {/**
                         <DropdownItem>
                             <Link to="/system" className="navbar-menu-link">The System</Link>
                         </DropdownItem>
                         <DropdownItem>
                             <Link to="/information" className="navbar-menu-link">Information</Link>
                         </DropdownItem> 
+                         */}
                         <DropdownItem>
                             <Link to="/gallery" className="navbar-menu-link">Gallery</Link>
                         </DropdownItem>
@@ -78,15 +79,16 @@ class Navbar_Sticky extends Component {
            
             </div>
           </Navbar>
-          <Route exact path="/home" component={Home} />
+          <Route exact path="/" component={RE_Parallax} />
+          
+          <Route exact path="/home" component={RE_Parallax} />
+          
           <Route exact path="/system" component={System} />
           <Route exact path="/information" component={Information} />
           <Route exact path="/gallery" component={Gallery} />
           </div>
           </Router>
-        </div>
-       
-      </div>
+        
     );
   }
 }

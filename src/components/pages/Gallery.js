@@ -6,27 +6,71 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption
+  CarouselCaption,
+  Card,
+  CardBody
 } from 'reactstrap';
 import image1 from '../assets/images/IMG_0856.jpeg'; 
 import image2 from '../assets/images/IMG_1242-650x650.jpg'; 
 import image3 from '../assets/images/IMG_3005.jpeg'; 
+import image4 from '../assets/images/IMG_0618-650x488.jpg'; 
+import image5 from '../assets/images/IMG_0818-650x488.jpg'; 
+import image6 from '../assets/images/IMG_0862-1.jpeg'; 
+import image7 from '../assets/images/IMG_1797-488x650.jpg'; 
+import image8 from '../assets/images/IMG_4713-488x650.jpg'; 
+import image9 from '../assets/images/IMG_4755.jpeg'; 
+import image10 from '../assets/images/IMG_5023.jpeg'; 
 
 const items = [
   {
     src:  image1,
-    altText: 'Slide 1',
-    caption: 'Slide 1'
+    altText: 'alternative Text',
+    caption: 'caption 1'
   },
   {
     src: image2,
-    altText: 'Slide 2',
-    caption: 'Slide 2'
+    altText: 'alternative Text',
+    caption: 'caption 2'
   },
   {
     src: image3,
-    altText: 'Slide 3',
-    caption: 'Slide 3'
+    altText: 'alternative Text',
+    caption: 'caption 3'
+  },
+  {
+    src: image4,
+    altText: 'alternative Text',
+    caption: 'caption 4'
+  },
+  {
+    src: image5,
+    altText: 'alternative Text',
+    caption: 'caption 5'
+  },
+  {
+    src: image6,
+    altText: 'alternative Text',
+    caption: 'caption 6'
+  },
+  {
+    src: image7,
+    altText: 'alternative Text',
+    caption: 'caption 7'
+  },
+  {
+    src: image8,
+    altText: 'alternative Text',
+    caption: 'caption 8'
+  },
+  {
+    src: image9,
+    altText: 'alternative Text',
+    caption: 'caption 9'
+  },
+  {
+    src: image10,
+    altText: 'alternative Text',
+    caption: 'caption 10'
   }
 ];
 
@@ -71,14 +115,19 @@ class Gallery extends Component {
 
     const slides = items.map((item) => {
       return (
-        <CarouselItem
-          onExiting={this.onExiting}
-          onExited={this.onExited}
-          key={item.src}
-        >
-          <img src={item.src} alt={item.altText} />
-          <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
-        </CarouselItem>
+       
+            <CarouselItem
+              onExiting={this.onExiting}
+              onExited={this.onExited}
+              key={item.src}
+            >
+             
+            <img src={item.src} alt={item.altText}  style={{height:'300px',boxShadow:'2px 2px 15px #000'}}/>
+            
+            <CarouselCaption captionText={item.caption} captionHeader={item.caption}   />
+          </CarouselItem>
+         
+      
       );
     });
 

@@ -122,7 +122,7 @@ class Gallery extends Component {
               key={item.src}
             >
              
-            <img src={item.src} alt={item.altText}  style={{height:'300px',boxShadow:'2px 2px 15px #000'}}/>
+            <img src={item.src} alt={item.altText}  style={{height:'400px',boxShadow:'2px 2px 15px #000'}}/>
             
             <CarouselCaption captionText={item.caption} captionHeader={item.caption}   />
           </CarouselItem>

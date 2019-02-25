@@ -1,16 +1,5 @@
-.Footer{
-    background-color:#fff;
-    padding:0;
-    margin:0;
-    text-align:center;
-}
-.Footer h1,h2,h3,h4,p{
-    margin:0;
-    padding:0;
-}
 
- 
-svg {
+  svg {
     width: 800px;
     height: 100%;
     padding: 50px;
@@ -18,7 +7,7 @@ svg {
   
   line {
     stroke-width: .5;
-    stroke: #000;
+    stroke: #fff;
   }
   
   #wave {
@@ -28,4 +17,3 @@ svg {
     stroke-linejoin: round;
     stroke: #56acf4;
   }
- 
